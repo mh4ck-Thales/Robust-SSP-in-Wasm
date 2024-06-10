@@ -18,7 +18,7 @@ The compilation commands for the different files are the following, using :
 # for no-spp
 /opt/wasi-sdk/bin/clang -g --target=wasm32-wasi -Wl,--stack-first poc.c -O2 -o poc-no-ssp.wasm
 # for ssp 
-/opt/wasi-sdk/bin/clang -g --target=wasm32-wasi -fstack-protector-all -Wl,--stack-first poc.c -O2 -o poc.wasm
+/opt/wasi-sdk/bin/clang -g --target=wasm32-wasi -fstack-protector-all -Wl,--stack-first poc.c -O2 -o poc-ssp.wasm
 ```
 
 ## Debug the exploit 
